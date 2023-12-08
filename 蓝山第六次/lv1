@@ -1,0 +1,26 @@
+package dao
+
+import (
+	"os"
+	"strings"
+)
+
+const dataFile = "userdata.txt"
+
+func AddUserToFile(username, password string) error {
+	file, err := os.OpenFile(dataFile, os.O_APPEND|os.O_WRONLY|os.O_CREATE, 0644)
+	if err != nil {
+		return err
+	}
+	defer file.Close()
+
+	_, err = file.WriteString(username + "," + password + "\
+	}
+}
+
+if err := scanner.Err(); err != nil {
+	return false, err
+}
+
+return false, nil
+
